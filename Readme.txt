@@ -11,8 +11,10 @@ Installation Guide
 
 Steps for build & execution for all APIs
 1. Unzip the project and run the application as Spring Boot application.
-2. H2 database will start. Run rooms.sql script in H2 db.(Install MySQL and run the provided db script(rooms.sql) and start the DB server)
-3. Run PostMan app.
-4. For getting available rooms: Get -> http://localhost:8000/findAll
-5. For booking a room: Post -> http://localhost:8000/bookARoom/1 --> 1 is the room id.
-6. For cancelling a booking: Post -> http://localhost:8000/cancelBooking/1 --> 1 is the booking id
+2. H2 database will start or (Install MySQL and run the provided db script(rooms.sql) and start the DB server)
+3. Connect to https://localhost:8000/h2-console with JDBC URL "jdbc:h2:mem:booking".
+4. Run rooms.sql script in H2 db.
+5. Run PostMan app.
+6. For getting available rooms: Get -> http://localhost:8000/findAll
+7. For booking a room: Post -> http://localhost:8000/bookARoom/1 --> 1 is the room id.
+8. For cancelling a booking: Post -> http://localhost:8000/cancelBooking/1 --> 1 is the booking id
