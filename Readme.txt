@@ -5,13 +5,13 @@ List of all assumptions
 3. For cancellation user will provide booking id
 
 Installation Guide
-1. Install MySQL and run the provided db script. (rooms.sql)
-2. Unzip the project and run the application as Spring Boot application.
+1. Unzip the project and run the application as Spring Boot application.
+2. H2 database will start. Run rooms.sql script in H2 db.(Install MySQL and run the provided db script(rooms.sql) and start the DB server)
 3. Run requests from Postman.
 
 Steps for build & execution for all APIs
-1. Install MySQL and run the provided db script(Meetings.sql) and start the DB server.
-2. Unzip the project and run the application as Spring Boot application.
+1. Unzip the project and run the application as Spring Boot application.
+2. H2 database will start. Run rooms.sql script in H2 db.(Install MySQL and run the provided db script(rooms.sql) and start the DB server)
 3. Run PostMan app.
 4. For getting available rooms: Get -> http://localhost:8000/findAll
 5. For booking a room: Post -> http://localhost:8000/bookARoom/1 --> 1 is the room id.
